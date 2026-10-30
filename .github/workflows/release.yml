@@ -1,0 +1,54 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+      - '[0-9]+.[0-9]+.[0-9]+'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Get version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Create plugin zip
+        run: |
+          # Temporary directory with the correct folder name
+          mkdir -p build/monetico-for-gravity-forms
+
+          # Copy plugin files (excluding git, github, and build artifacts)
+          rsync -av --exclude='.git' \
+                    --exclude='.github' \
+                    --exclude='build' \
+                    --exclude='.gitignore' \
+                    --exclude='*.md' \
+                    --exclude='composer.*' \
+                    --exclude='package*.json' \
+                    --exclude='node_modules' \
+                    --exclude='.DS_Store' \
+                    --exclude='screenshot*.*' \
+                    ./ build/monetico-for-gravity-forms/
+
+          # Keep README.md (used by the View details popup)
+          cp README.md build/monetico-for-gravity-forms/ 2>/dev/null || true
+
+          cd build
+          zip -r ../monetico-for-gravity-forms.zip monetico-for-gravity-forms
+          cd ..
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: monetico-for-gravity-forms.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

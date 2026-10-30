@@ -1,0 +1,871 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Monetico for Gravity Forms\n"
+"POT-Creation-Date: 2020-03-27 18:11+0100\n"
+"PO-Revision-Date: 2026-10-30 14:30+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: monetico-for-gravity-forms.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: class-monetico-gf-addon.php:59
+msgid ""
+"Gravity Forms requires CGI2 return URL to be enabled on your Monetico "
+"account. Follow the following steps to confirm CGI2 return URL is enabled."
+msgstr ""
+"Gravity Forms exige que l’URL de retour CGI2 soit activée sur votre compte "
+"Monetico. Suivez les étapes suivantes pour confirmer que l’URL de retour "
+"CGI2 est activée."
+
+#: class-monetico-gf-addon.php:74
+msgid "CGI2 return URL operational"
+msgstr "URL de retour CGI2 opérationnelle"
+
+#: class-monetico-gf-addon.php:76
+msgid ""
+"Confirm that you have configured your Monetico account to enable CGI2 return "
+"URL"
+msgstr ""
+"Confirmez que vous avez configuré votre compte Monetico pour activer l’URL "
+"de retour CGI2"
+
+#: class-monetico-gf-addon.php:81
+msgid "Settings have been updated."
+msgstr "Les paramètres ont été mis à jour."
+
+#: class-monetico-gf-addon.php:93
+#, php-format
+msgid "To get started, please configure your %sMonetico Settings%s!"
+msgstr "Pour commencer, veuillez configurer vos %sréglages Monetico%s !"
+
+#: class-monetico-gf-addon.php:143 class-monetico-gf-addon.php:151
+msgid "Mode"
+msgstr "Mode"
+
+#: class-monetico-gf-addon.php:146
+msgid "Test"
+msgstr "Test"
+
+#: class-monetico-gf-addon.php:147
+msgid "Production"
+msgstr "Production"
+
+#: class-monetico-gf-addon.php:151
+msgid ""
+"Select Production to receive live payments. Select Test for testing purposes "
+"when using the Monetico development environment."
+msgstr ""
+"Sélectionnez Production pour recevoir des paiements en direct. Sélectionnez "
+"Test à des fins de test lors de l’utilisation de l’environnement de "
+"développement Monetico."
+
+#: class-monetico-gf-addon.php:155 class-monetico-gf-addon.php:163
+msgid "TPE"
+msgstr "TPE"
+
+#: class-monetico-gf-addon.php:163
+msgid "Number Electronic Payment Terminal linked to your Monetico contract."
+msgstr ""
+"Numéro de Terminal de Paiement Electronique lié à votre contrat Monetico."
+
+#: class-monetico-gf-addon.php:168 class-monetico-gf-addon.php:176
+msgid "Key"
+msgstr "Clé"
+
+#: class-monetico-gf-addon.php:176
+msgid "Secret key to obtain from your Monetico account."
+msgstr "Clé secrète à obtenir à partir de votre compte Monetico."
+
+#: class-monetico-gf-addon.php:181 class-monetico-gf-addon.php:189
+msgid "Company code"
+msgstr "Code  société"
+
+#: class-monetico-gf-addon.php:189
+msgid "Company code sent by e-mail by Monetico."
+msgstr "Code société envoyé par e-mail par Monetico."
+
+#: class-monetico-gf-addon.php:193 class-monetico-gf-addon.php:195
+msgid "Currency code"
+msgstr "Code devise"
+
+#: class-monetico-gf-addon.php:195
+msgid "Currency code (ISO 4217 compliant). EUR -> Euros, USD -> Dollars, etc.."
+msgstr "Code devise (conforme ISO 4217). EUR -> Euros, USD -> Dollars, etc."
+
+#: class-monetico-gf-addon.php:197
+msgid "Use default currency"
+msgstr "Utiliser la devise par défaut"
+
+#: class-monetico-gf-addon.php:201 class-monetico-gf-addon.php:208
+msgid "Language"
+msgstr "Langue"
+
+#: class-monetico-gf-addon.php:207
+msgid "FR"
+msgstr "FR"
+
+#: class-monetico-gf-addon.php:208
+msgid "Language of the company: FR -> French, EN -> English."
+msgstr "Langue de la société : FR -> Français, EN -> Anglais."
+
+#: class-monetico-gf-addon.php:213 class-monetico-gf-addon.php:218
+msgid "Error message"
+msgstr "Message d'erreur"
+
+#: class-monetico-gf-addon.php:218
+msgid "Error message to be displayed to the customer when payment fails."
+msgstr "Message d’erreur à afficher au client en cas d’échec du paiement."
+
+#: class-monetico-gf-addon.php:222 class-monetico-gf-addon.php:227
+msgid "Cancellation message"
+msgstr "Message d'annulation"
+
+#: class-monetico-gf-addon.php:227
+msgid ""
+"Cancellation message to be displayed when the customer returns to the site "
+"without the bank being able to call the CGI2 return URL."
+msgstr ""
+"Message d’annulation à afficher lorsque le client retourne sur le site sans "
+"que la banque n'ai pu appeler l’URL de retour CGI2."
+
+#: class-monetico-gf-addon.php:337 class-monetico-gf-addon.php:339
+msgid "Notifications"
+msgstr "Notifications"
+
+#: class-monetico-gf-addon.php:339
+msgid ""
+"Enable this option if you would like to only send out this form's "
+"notifications for the 'Form is submitted' event after payment has been "
+"received. Leaving this option disabled will send these notifications "
+"immediately after the form is submitted. Notifications which are configured "
+"for other events will not be affected by this option."
+msgstr ""
+"Activez cette option pour n’envoyer les notifications de l’événement « Le "
+"formulaire est soumis » qu’après réception du paiement. Si elle est "
+"désactivée, ces notifications sont envoyées dès la soumission du "
+"formulaire. Les notifications configurées pour d’autres événements ne sont "
+"pas concernées."
+
+#: class-monetico-gf-addon.php:348 class-monetico-gf-addon.php:350
+msgid "Posts"
+msgstr "Articles"
+
+#: class-monetico-gf-addon.php:350
+msgid ""
+"Enable this option if you would like to only create the post after payment "
+"has been received."
+msgstr ""
+"Activez cette option pour ne créer l’article qu’après réception du paiement."
+
+#: class-monetico-gf-addon.php:352
+msgid "Create post only when payment is received."
+msgstr "Créer l’article uniquement à réception du paiement."
+
+#: class-monetico-gf-addon.php:400
+msgid "Last Name"
+msgstr "Nom"
+
+#: class-monetico-gf-addon.php:403
+msgid "First Name"
+msgstr "Prénom"
+
+#. translators: 1: currency code; 2: currency name
+#: class-monetico-gf-addon.php:446
+#, php-format
+msgid "%1$s &mdash; %2$s"
+msgstr "%1$s &mdash; %2$s"
+
+#: class-monetico-gf-addon.php:471
+msgid "Monetico field"
+msgstr "Champ Monetico"
+
+#: class-monetico-gf-addon.php:1705
+msgid "Credit card payment confirmed."
+msgstr "Paiement par carte bancaire confirmé."
+
+#: class-monetico-gf-addon.php:1710
+#, php-format
+msgid ""
+"Payment amount (%s) does not match product price. Entry will not be marked "
+"as Approved. Transaction ID: %s"
+msgstr ""
+"Le montant du paiement (%s) ne correspond pas au prix du produit. L’entrée "
+"ne sera pas marquée comme approuvée. ID transactionnel : %s"
+
+#: class-monetico-gf-addon.php:1725
+msgid ""
+"Credit Card Payment: FAIL\n"
+"Error:"
+msgstr ""
+"Paiement par carte bancaire : ECHEC\n"
+"Erreur :"
+
+#: class-monetico-gf-addon.php:1893
+#, php-format
+msgid "%s authentication is successful."
+msgstr "L’authentification %s est réussie."
+
+#: class-monetico-gf-addon.php:1894
+#, php-format
+msgid ""
+"The %s authentication could not be completed (technical problem or other)."
+msgstr ""
+"L’authentification %s n’a pas pu être complétée (problème technique ou "
+"autre)."
+
+#: class-monetico-gf-addon.php:1895
+#, php-format
+msgid "%s authentication failed."
+msgstr "L’authentification %s a échoué."
+
+#: class-monetico-gf-addon.php:1896
+#, php-format
+msgid "%s authentication has been denied by the issuer."
+msgstr "L’authentification %s a été refusée par l’émetteur."
+
+#: class-monetico-gf-addon.php:1897
+#, php-format
+msgid ""
+"An %s authentication attempt has been made. The authentication could not be "
+"done but a proof was generated (CAVV)."
+msgstr ""
+"Une tentative d’authentification %s a été tentée. L’authentification n’a pas "
+"pu être faite, mais une preuve a été générée (CAVV)."
+
+#: class-monetico-gf-addon.php:1898
+#, php-format
+msgid "The card is not enrolled in %s."
+msgstr "La carte n’est pas enrôlée au %s."
+
+#: class-monetico-gf-addon.php:1899
+msgid "3DSecure has been disengaged."
+msgstr "3DSecure a été désengagé."
+
+#: class-monetico-gf-addon.php:1902
+msgid "Explicit disengaging."
+msgstr "Désengagement explicite."
+
+#: class-monetico-gf-addon.php:1903
+msgid ""
+"Disengagement because the amount of the transaction does not reach the "
+"configured amount."
+msgstr ""
+"Désengagement car le montant de la transaction n’atteint pas le montant "
+"configuré."
+
+#: class-monetico-gf-addon.php:1904
+msgid "Disengagement on scoring pattern."
+msgstr "Désengagement sur le modèle de notation."
+
+#: class-monetico-gf-addon.php:1916
+msgid ""
+"The transaction was not done according to the 3DSecure protocol and the risk "
+"of unpaid is high."
+msgstr ""
+"La transaction n’a pas été effectuée conformément au protocole 3DSecure et "
+"le risque d’impayé est élevé."
+
+#: class-monetico-gf-addon.php:1917 class-monetico-gf-addon.php:1918
+msgid ""
+"The transaction was made according to 3DS protocol and the risk level is"
+msgstr ""
+"La transaction a été effectuée selon le protocole 3DS et le niveau de risque "
+"est"
+
+#: class-monetico-gf-addon.php:1917
+msgid "low."
+msgstr "faible."
+
+#: class-monetico-gf-addon.php:1918
+msgid "high."
+msgstr "haut."
+
+#: class-monetico-gf-addon.php:1925
+msgid "The customer's bank requests additional information."
+msgstr "La banque du client demande des informations supplémentaires."
+
+#: class-monetico-gf-addon.php:1927
+msgid "The customer's bank refuses to grant permission."
+msgstr "La banque du client refuse d’accorder l’autorisation."
+
+#: class-monetico-gf-addon.php:1928
+msgid ""
+"The payment request was blocked by the filter settings that the merchant has "
+"implemented in its Fraud Prevention Module."
+msgstr ""
+"La demande de paiement a été bloquée par les paramètres de filtre que le "
+"commerçant a mis en œuvre dans son module de prévention de la fraude."
+
+#: class-monetico-gf-addon.php:1929
+msgid "IP address"
+msgstr "Adresse IP"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Card number"
+msgstr "Numéro de la carte"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Card BIN"
+msgstr "BIN carte"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Country card"
+msgstr "Pays carte"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Country IP"
+msgstr "Pays IP"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Consistency country / card countries IP"
+msgstr "Pays de cohérence / IP pays de carte"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Disposable email"
+msgstr "E-mail jetable"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Limitation amount for a CB over time"
+msgstr "Montant de limitation pour un CB au fil du temps"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Limitation of number of transactions for a CB over time"
+msgstr "Limitation du nombre de transactions pour un CB au fil du temps"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Limitation of number of transactions over a period alias"
+msgstr "Limitation du nombre de transactions sur un alias sur une période"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Limitation on amount per alias over time"
+msgstr "Limitation du montant par alias au fil du temps"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Limitation amount by IP over time"
+msgstr "Limitation du montant par IP au fil du temps"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Limitation of number of transactions by IP over time"
+msgstr "Limitation du nombre de transactions par IP au fil du temps"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Testers cards"
+msgstr "Cartes testeurs"
+
+#: class-monetico-gf-addon.php:1929
+msgid "Limitation on number of aliases by CB"
+msgstr "Limitation du nombre d’alias par CB"
+
+#: class-monetico-gf-addon.php:1939
+msgid "Cause of filtering:"
+msgstr "Cause du filtrage :"
+
+#: class-monetico-gf-addon.php:1943
+msgid "3D Secure authentication negatively received from the holder's bank."
+msgstr ""
+"Authentification 3D Secure reçue négativement de la banque du titulaire."
+
+#: class-monetico-gf-addon.php:1944
+msgid "Unknown error"
+msgstr "Erreur inconnue"
+
+#: class-monetico-gf-addon.php:2010
+msgid "Payment Completed"
+msgstr "Paiement terminé"
+
+#: class-monetico-gf-addon.php:2012
+msgid "Payment Failed"
+msgstr "Paiement échoué"
+
+#: class-monetico-gf-addon.php:2013
+msgid "Payment Pending"
+msgstr "Paiement en attente"
+
+#: class-monetico-gf-addon.php:2140
+#, php-format
+msgid ""
+"Payment information was manually updated. Status: %s. Amount: %s. "
+"Transaction ID: %s. Date: %s"
+msgstr ""
+"Les informations de paiement ont été mises à jour manuellement. Statut : %s. "
+"Montant : %s. Transaction ID : %s. Date : %s"
+
+#. Plugin Name of the plugin/theme
+msgid "Monetico for Gravity Forms"
+msgstr "Monetico for Gravity Forms"
+
+#. Description of the plugin/theme
+msgid ""
+"Unofficial Monetico payment gateway for Gravity Forms. Provided as is, "
+"without any warranty: the author accepts no liability for any payment made "
+"or received with it. Use at your own risk."
+msgstr ""
+"Passerelle de paiement Monetico non officielle pour Gravity Forms. Fournie en "
+"l’état, sans aucune garantie : l’auteur décline toute responsabilité quant "
+"aux paiements effectués ou reçus avec ce plugin. À utiliser à vos propres "
+"risques."
+
+#. Author of the plugin/theme
+msgid "Guilamu"
+msgstr "Guilamu"
+
+#: class-monetico-gf-addon.php
+msgid "Monetico Payment Link"
+msgstr "Lien de paiement Monetico"
+
+#: class-monetico-gf-addon.php
+msgid ""
+"This entry has an incomplete payment. Use the link below to resend to the "
+"customer or use the {monetico_payment_link} merge tag in a notification."
+msgstr ""
+"Le paiement de cette entrée n’a pas abouti. Utilisez le lien ci-dessous "
+"pour le renvoyer au client, ou la balise {monetico_payment_link} dans une "
+"notification."
+
+#: class-monetico-gf-addon.php
+msgid "Payment link copied to clipboard!"
+msgstr "Lien de paiement copié dans le presse-papiers !"
+
+#: class-monetico-gf-addon.php
+msgid "Copy Link"
+msgstr "Copier le lien"
+
+#: class-monetico-gf-addon.php
+msgid "Amount: %s %s"
+msgstr "Montant : %s %s"
+
+#: class-monetico-gf-addon.php
+msgid ""
+"In your Monetico dashboard, enter the following CGI2 return URL in Settings "
+"> Return interface, for each site code used: %s"
+msgstr ""
+"Dans votre tableau de bord Monetico, saisissez l’URL de retour CGI2 "
+"suivante dans Paramétrage > Interface retour, pour chaque code site utilisé "
+": %s"
+
+#: class-monetico-gf-addon.php
+msgid ""
+"If this menu is not available to you, send this URL by e-mail to Monetico "
+"(centrecom@e-i.com) and wait for their confirmation."
+msgstr ""
+"Si ce menu ne vous est pas accessible, envoyez cette URL par e-mail à "
+"Monetico (centrecom@e-i.com) et attendez leur confirmation."
+
+#: class-monetico-gf-addon.php
+msgid ""
+"Your TPE can only go into production after three successful test payments "
+"within seven days, whose CGI2 return was correctly processed by the site."
+msgstr ""
+"Votre TPE ne peut passer en production qu’après trois paiements de test "
+"réussis en sept jours, dont le retour CGI2 a été correctement traité par le "
+"site."
+
+#: class-monetico-gf-addon.php
+msgid "3D Secure minimum amount"
+msgstr "Montant minimum 3D Secure"
+
+#: class-monetico-gf-addon.php
+msgid ""
+"Below this amount, no 3D Secure challenge is requested from the customer "
+"(the issuing bank may still require one). Without authentication, the "
+"merchant loses the liability shift in case of dispute. Leave empty to let "
+"Monetico decide for every payment."
+msgstr ""
+"En dessous de ce montant, aucune authentification 3D Secure n’est demandée "
+"au client (la banque émettrice peut tout de même l’exiger). Sans "
+"authentification, le commerçant perd le transfert de responsabilité en cas "
+"de contestation. Laisser vide pour laisser Monetico décider pour chaque "
+"paiement."
+
+#: class-monetico-gf-addon.php
+msgid "Card: %s"
+msgstr "Carte : %s"
+
+#: class-monetico-gf-addon.php
+msgid "Payment method: %s"
+msgstr "Moyen de paiement : %s"
+
+#: class-monetico-gf-addon.php
+msgid "Authorization number: %s"
+msgstr "N° d’autorisation : %s"
+
+#: class-monetico-gf-addon.php
+msgid "Monetico reference: %s"
+msgstr "Référence Monetico : %s"
+
+#: class-monetico-gf-addon.php
+msgid "Monetico Refund"
+msgstr "Remboursement Monetico"
+
+#: class-monetico-gf-addon.php
+msgid "Refundable amount: %s"
+msgstr "Montant remboursable : %s"
+
+#: class-monetico-gf-addon.php
+msgid "Already refunded: %s"
+msgstr "Déjà remboursé : %s"
+
+#: class-monetico-gf-addon.php
+msgid "Amount to refund"
+msgstr "Montant à rembourser"
+
+#: class-monetico-gf-addon.php
+msgid "Refund"
+msgstr "Rembourser"
+
+#: class-monetico-gf-addon.php
+msgid ""
+"The refund option must be enabled on your TPE, and in production the IP "
+"address of this server must be declared to Monetico technical support."
+msgstr ""
+"L’option remboursement doit être activée sur votre TPE et, en production, "
+"l’adresse IP de ce serveur doit être déclarée au support technique Monetico."
+
+#: class-monetico-gf-addon.php
+msgid "Refund this amount to the customer? This cannot be undone."
+msgstr "Rembourser ce montant au client ? Cette opération est irréversible."
+
+#: class-monetico-gf-addon.php
+msgid "The request failed. Check the entry notes before trying again."
+msgstr ""
+"La requête a échoué. Vérifiez les notes de l’entrée avant de réessayer."
+
+#: class-monetico-gf-addon.php
+msgid "You are not allowed to refund this payment."
+msgstr "Vous n’êtes pas autorisé à rembourser ce paiement."
+
+#: class-monetico-gf-addon.php
+msgid "The Monetico feed of this entry no longer exists."
+msgstr "Le flux Monetico de cette entrée n’existe plus."
+
+#: class-monetico-gf-addon.php
+msgid "The amount must be between 0.01 and %s."
+msgstr "Le montant doit être compris entre 0.01 et %s."
+
+#: class-monetico-gf-addon.php
+msgid ""
+"The Monetico reference of this payment is unknown (payment link resent "
+"before version 1.0.7). Refund it from the Monetico dashboard."
+msgstr ""
+"La référence Monetico de ce paiement est inconnue (lien de paiement renvoyé "
+"avant la version 1.0.7). Remboursez-le depuis le tableau de bord Monetico."
+
+#: class-monetico-gf-addon.php
+msgid "Monetico could not be reached: %s"
+msgstr "Impossible de joindre Monetico : %s"
+
+#: class-monetico-gf-addon.php
+msgid "Monetico refund of %s refused: %s"
+msgstr "Remboursement Monetico de %s refusé : %s"
+
+#: class-monetico-gf-addon.php
+msgid ""
+"Monetico refund of %s accepted (total refunded: %s). Monetico reference: "
+"%s. By: %s"
+msgstr ""
+"Remboursement Monetico de %s accepté (total remboursé : %s). Référence "
+"Monetico : %s. Par : %s"
+
+#: class-monetico-gf-addon.php
+msgid "The refund was refused."
+msgstr "Le remboursement a été refusé."
+
+#: class-monetico-gf-addon.php
+msgid "Merchant not identified: check the TPE and company code of the feed."
+msgstr ""
+"Commerçant non identifié : vérifiez le TPE et le code société du flux."
+
+#: class-monetico-gf-addon.php
+msgid "Invalid MAC: check the key of the feed."
+msgstr "MAC invalide : vérifiez la clé du flux."
+
+#: class-monetico-gf-addon.php
+msgid ""
+"Your TPE is not allowed to make refunds, or the IP address of this server "
+"is not declared: contact Monetico technical support."
+msgstr ""
+"Votre TPE n’est pas autorisé à rembourser, ou l’adresse IP de ce serveur "
+"n’est pas déclarée : contactez le support technique Monetico."
+
+#: class-monetico-gf-addon.php
+msgid ""
+"The refund request has expired: check the date and time of the server."
+msgstr ""
+"La demande de remboursement a expiré : vérifiez la date et l’heure du "
+"serveur."
+
+#: class-monetico-gf-addon.php
+msgid ""
+"The amounts do not match those of the bank: a refund may have been made "
+"from the Monetico dashboard."
+msgstr ""
+"Les montants ne correspondent pas à ceux de la banque : un remboursement a "
+"peut-être été fait depuis le tableau de bord Monetico."
+
+#: class-monetico-gf-addon.php
+msgid "The maximum number of refunds of your TPE has been reached."
+msgstr "Le nombre maximum de remboursements de votre TPE est atteint."
+
+#: class-monetico-gf-addon.php
+msgid "The order does not exist at Monetico."
+msgstr "La commande n’existe pas chez Monetico."
+
+#: class-monetico-gf-addon.php
+msgid "Monetico technical problem: try again later."
+msgstr "Problème technique Monetico : réessayez plus tard."
+
+#: class-monetico-gf-addon.php
+msgid "Another operation is in progress on this order: try again later."
+msgstr ""
+"Une autre opération est en cours sur cette commande : réessayez plus tard."
+
+#: class-monetico-gf-addon.php
+msgid "The order is already fully refunded."
+msgstr "La commande est déjà entièrement remboursée."
+
+#: class-monetico-gf-addon.php
+msgid ""
+"A global refund is not allowed for this order: refund it from the Monetico "
+"dashboard."
+msgstr ""
+"Le remboursement global n’est pas permis pour cette commande : "
+"remboursez-la depuis le tableau de bord Monetico."
+
+#: class-monetico-gf-addon.php
+msgid ""
+"The amount already refunded does not match the bank: a refund may have been "
+"made from the Monetico dashboard."
+msgstr ""
+"Le montant déjà remboursé ne correspond pas à celui de la banque : un "
+"remboursement a peut-être été fait depuis le tableau de bord Monetico."
+
+#: class-monetico-gf-addon.php
+msgid "Unexpected response from Monetico. See the add-on logs."
+msgstr ""
+"Réponse inattendue de Monetico. Consultez les journaux de l’extension."
+
+#: class-monetico-gf-addon.php
+msgid "Payment Refunded"
+msgstr "Paiement remboursé"
+
+#~ msgctxt "feed field name"
+#~ msgid "TPE"
+#~ msgstr "TPE"
+
+#~ msgctxt "field placeholder"
+#~ msgid "0000001"
+#~ msgstr "0000001"
+
+#~ msgctxt "feed field name"
+#~ msgid "Key"
+#~ msgstr "Clé"
+
+#~ msgctxt "field placeholder"
+#~ msgid "12345678901234567890123456789012345678P0"
+#~ msgstr "12345678901234567890123456789012345678P0"
+
+#, fuzzy
+#~ msgctxt "feed field name"
+#~ msgid "Company code"
+#~ msgstr "Code de la société"
+
+#, fuzzy
+#~ msgctxt "feed field name"
+#~ msgid "Currency code"
+#~ msgstr "Code de la devise"
+
+#, fuzzy
+#~ msgctxt "feed field name"
+#~ msgid "Language"
+#~ msgstr "Langue"
+
+#~ msgid "Options"
+#~ msgstr "Options"
+
+#~ msgid "Turn on or off the available PayPal checkout options."
+#~ msgstr ""
+
+#~ msgid "Do not prompt buyer to include a shipping address."
+#~ msgstr ""
+
+#~ msgid "Do not prompt buyer to include a note with payment."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Send notifications for the 'Form is submitted' event only when payment is "
+#~ "received."
+#~ msgstr ""
+
+#~ msgid "Mark Post as Draft"
+#~ msgstr ""
+
+#~ msgid "Delete Post"
+#~ msgstr "Supprimer la publication"
+
+#~ msgid "Paiement carte bancaire"
+#~ msgstr ""
+
+#, php-format
+#~ msgid ""
+#~ "Send by e-mail to Monetico (centrecom@e-i.com) the following CGI2 return "
+#~ "URL: %s"
+#~ msgstr ""
+#~ "Envoyez par e-mail à Monetico (centrecom@e-i.com) l’URL de retour CGI2 "
+#~ "suivante : %s"
+
+#~ msgid ""
+#~ "Wait for confirmation from Monetico that the CGI2 return URL has been set up."
+#~ msgstr ""
+#~ "Attendez la confirmation de Monetico que l’URL de retour CGI2 a été "
+#~ "configurée."
+
+#: class-monetico-gf-migration.php:212
+msgid ""
+"Monetico for Gravity Forms: the settings, feeds and payment history of the "
+"\"Gravity Forms Monetico\" plugin have been migrated, and that plugin has "
+"been deactivated. You can now delete it."
+msgstr ""
+"Monetico for Gravity Forms : les réglages, flux et l’historique des paiements "
+"de l’extension « Gravity Forms Monetico » ont été migrés, et cette extension "
+"a été désactivée. Vous pouvez maintenant la supprimer."
+
+#: class-monetico-gf-addon.php:69
+msgid ""
+"Unofficial plugin, provided \"as is\", without any warranty. Use it at your "
+"own risk."
+msgstr ""
+"Plugin non officiel, fourni « en l’état », sans aucune garantie. Vous "
+"l’utilisez à vos propres risques."
+
+#: class-monetico-gf-addon.php:70
+msgid ""
+"This plugin is not affiliated with, endorsed or supported by Monetico, Crédit "
+"Mutuel, CIC, Euro-Information or Gravity Forms. Its author can in no event "
+"be held liable for any payment received, missed, duplicated, wrongly "
+"recorded or refunded through it, nor for any direct or indirect loss "
+"resulting from its use."
+msgstr ""
+"Ce plugin n’est ni affilié à, ni approuvé, ni pris en charge par Monetico, le "
+"Crédit Mutuel, le CIC, Euro-Information ou Gravity Forms. Son auteur ne peut "
+"en aucun cas être tenu responsable des paiements reçus, manqués, dupliqués, "
+"mal enregistrés ou remboursés par son intermédiaire, ni d’aucune perte "
+"directe ou indirecte résultant de son utilisation."
+
+#: class-monetico-gf-addon.php:71
+msgid ""
+"Before going into production, check every payment against your Monetico "
+"dashboard, which remains the only reference. If you need a guaranteed "
+"solution, use an official Monetico module or a commercially supported add-on "
+"instead."
+msgstr ""
+"Avant la mise en production, vérifiez chaque paiement dans votre tableau de "
+"bord Monetico, qui reste la seule référence. Si vous avez besoin d’une "
+"solution garantie, utilisez plutôt un module officiel Monetico ou une "
+"extension bénéficiant d’un support commercial."
+
+#: monetico-for-gravity-forms.php
+msgid "More information about Monetico for Gravity Forms"
+msgstr "Plus d’informations sur Monetico for Gravity Forms"
+
+#: monetico-for-gravity-forms.php
+msgid "View details"
+msgstr "Afficher les détails"
+
+#: includes/class-github-updater.php
+msgid "Not installed yet"
+msgstr "Pas encore installée"
+
+#: includes/class-github-updater.php
+msgid "Installed"
+msgstr "Installée"
+
+#: includes/class-github-updater.php
+msgid "Requires Gravity Forms:"
+msgstr "Nécessite Gravity Forms :"
+
+#: includes/class-github-updater.php
+msgid "%s or higher"
+msgstr "%s ou plus récent"
+
+#: includes/class-github-updater.php
+msgid "Unable to rename the update folder. Please retry or update manually."
+msgstr "Impossible de renommer le dossier de mise à jour. Réessayez ou mettez à jour manuellement."
+
+#: class-monetico-gf-addon.php
+msgid ""
+"Monetico test payment received while the feed is in production mode: the "
+"entry was not marked as paid. Check this payment in your Monetico dashboard. "
+"Reference: %s"
+msgstr ""
+"Paiement de test Monetico reçu alors que le flux est en production : "
+"l’entrée n’a pas été marquée comme payée. Vérifiez ce paiement dans votre "
+"tableau de bord Monetico. Référence : %s"
+
+#: class-monetico-gf-addon.php
+msgid "This payment page has expired. Please submit the form again."
+msgstr "Cette page de paiement a expiré. Veuillez soumettre à nouveau le formulaire."
+
+#: class-monetico-gf-addon.php
+msgid "This payment link is invalid."
+msgstr "Ce lien de paiement n’est pas valide."
+
+#: class-monetico-gf-addon.php
+msgid "This payment has already been made. Thank you!"
+msgstr "Ce paiement a déjà été effectué. Merci !"
+
+#: class-monetico-gf-addon.php
+msgid "This payment link can no longer be used. Please contact the site owner."
+msgstr "Ce lien de paiement ne peut plus être utilisé. Veuillez contacter le responsable du site."
+
+#: class-monetico-gf-addon.php
+msgid "Monetico payment"
+msgstr "Paiement Monetico"
+
+#: class-monetico-gf-addon.php
+msgid "Redirecting to the Monetico secure payment page…"
+msgstr "Redirection vers la page de paiement sécurisée Monetico…"
+
+#: class-monetico-gf-addon.php
+msgid "Continue to payment"
+msgstr "Continuer vers le paiement"
+
+#: class-monetico-gf-addon.php
+msgid ""
+"Below this amount, the customer is not asked for 3D Secure authentication. "
+"Leave empty to let Monetico decide for every payment."
+msgstr ""
+"En dessous de ce montant, aucune authentification 3D Secure n’est demandée au "
+"client. Laissez vide pour laisser Monetico décider pour chaque paiement."
+
+#: class-monetico-gf-addon.php
+msgid "Before using it, keep in mind:"
+msgstr "Avant de l’utiliser, sachez que :"
+
+#: class-monetico-gf-addon.php
+msgid ""
+"this is only a request sent to the bank: the customer's bank may still "
+"require authentication;"
+msgstr ""
+"ce n’est qu’un souhait transmis à la banque : la banque du client peut quand "
+"même exiger l’authentification ;"
+
+#: class-monetico-gf-addon.php
+msgid ""
+"without authentication, if the payment is disputed, the merchant bears the "
+"risk instead of the customer's bank."
+msgstr ""
+"sans authentification, en cas de contestation du paiement, c’est le "
+"commerçant qui supporte le risque, et non plus la banque du client."
