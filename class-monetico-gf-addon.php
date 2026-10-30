@@ -603,7 +603,8 @@ class Monetico_GF_AddOn extends GFPaymentAddOn
 
 		/// Monetico attend un formulaire POST (doc. Page de paiement 1.5.2) : le client est redirigé vers une page
 		/// locale qui le poste automatiquement. Le formulaire scellé est conservé une heure.
-		$token = wp_generate_password(32, false);
+		/// Jeton en minuscules : la casse doit survivre à l'URL, au cache d'objets et à la lecture (insensible ou non à la casse)
+		$token = strtolower(wp_generate_password(32, false));
 		set_transient('monetico_gf_pay_' . $token, array('action' => $url . MONETICOPAIEMENT_URLPAYMENT, 'fields' => $payment_fields), HOUR_IN_SECONDS);
 
 		return add_query_arg('moneticoPay', $token, home_url('/'));
@@ -806,7 +807,7 @@ class Monetico_GF_AddOn extends GFPaymentAddOn
 	public function maybe_render_payment_form()
 	{
 		if (isset($_GET['moneticoPay'])) {
-			$token = sanitize_key(wp_unslash($_GET['moneticoPay']));
+			$token = preg_replace('/[^a-z0-9]/', '', strtolower((string) wp_unslash($_GET['moneticoPay'])));
 			$form = '' !== $token ? get_transient('monetico_gf_pay_' . $token) : false;
 			if (empty($form['action'])) {
 				$this->payment_page_error(__('This payment page has expired. Please submit the form again.', 'monetico-for-gravity-forms'), 410);
@@ -1191,7 +1192,8 @@ class Monetico_GF_AddOn extends GFPaymentAddOn
 	{
 		$messages = array(
 			'-1'  => __('The refund was refused.', 'monetico-for-gravity-forms'),
-			'-30' => __('Merchant not identified: check the TPE and company code of the feed.', 'monetico-for-gravity-forms'),
+			/// -30 couvre aussi une IP de serveur non autorisée au remboursement (doc. API Recrédit, codes retour)
+			'-30' => __('Merchant not identified: the IP address of this server is probably not authorized to make refunds (declare it to Monetico technical support), or the TPE and company code of the feed are wrong.', 'monetico-for-gravity-forms'),
 			'-31' => __('Invalid MAC: check the key of the feed.', 'monetico-for-gravity-forms'),
 			'-32' => __('Your TPE is not allowed to make refunds, or the IP address of this server is not declared: contact Monetico technical support.', 'monetico-for-gravity-forms'),
 			'-33' => __('The refund request has expired: check the date and time of the server.', 'monetico-for-gravity-forms'),

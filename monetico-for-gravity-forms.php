@@ -3,7 +3,7 @@
 Plugin Name: Monetico for Gravity Forms
 Plugin URI: https://github.com/guilamu/monetico-for-gravity-forms
 Description: Unofficial Monetico payment gateway for Gravity Forms. Provided as is, without any warranty: the author accepts no liability for any payment made or received with it. Use at your own risk.
-Version: 0.1.0
+Version: 0.1.2
 Requires at least: 5.8
 Requires PHP: 7.4
 Author: Guilamu
@@ -51,7 +51,7 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 
-define( 'MONETICO_GF_VERSION', '0.1.0' );
+define( 'MONETICO_GF_VERSION', '0.1.2' );
 define( 'MONETICO_GF_FILE', __FILE__ );
 define( 'MONETICO_GF_PATH', plugin_dir_path( __FILE__ ) );
 define( 'MONETICO_GF_BASENAME', plugin_basename( __FILE__ ) );

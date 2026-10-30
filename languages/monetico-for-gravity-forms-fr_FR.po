@@ -584,9 +584,14 @@ msgid "The refund was refused."
 msgstr "Le remboursement a été refusé."
 
 #: class-monetico-gf-addon.php
-msgid "Merchant not identified: check the TPE and company code of the feed."
+msgid ""
+"Merchant not identified: the IP address of this server is probably not "
+"authorized to make refunds (declare it to Monetico technical support), or "
+"the TPE and company code of the feed are wrong."
 msgstr ""
-"Commerçant non identifié : vérifiez le TPE et le code société du flux."
+"Commerçant non identifié : l’adresse IP de ce serveur n’est probablement pas "
+"autorisée à effectuer des remboursements (déclarez-la au support technique "
+"Monetico), ou le TPE et le code société du flux sont erronés."
 
 #: class-monetico-gf-addon.php
 msgid "Invalid MAC: check the key of the feed."

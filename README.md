@@ -102,6 +102,12 @@ add_filter( 'gform_monetico_query', function( $query_string, $form, $entry, $fee
 
 ## Changelog
 
+### 0.1.2 - 2026-10-30
+- **Improved:** A refund refused with code -30 now explains that the server IP address is probably not authorized for refunds at Monetico
+
+### 0.1.1 - 2026-10-30
+- **Fixed:** On sites with a persistent object cache (e.g. Redis), the payment page showed "This payment page has expired" instead of sending the customer to Monetico
+
 ### 0.1.0 - 2026-10-30
 - Initial release
 - Monetico Paiement (Monetico Online) payment gateway for Gravity Forms, in test or production mode
